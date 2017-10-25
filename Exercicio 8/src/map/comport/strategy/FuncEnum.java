@@ -22,20 +22,21 @@ public enum FuncEnum {
 		}
 	},
 	DBA {
-		
 		protected Gratif3Enum getTipoGratif() {
-			// TODO Auto-generated method stub
 			return Gratif3Enum.DEV;
 		}
 	}, LIDER {
 
-		@Override
 		protected Gratif3Enum getTipoGratif() {
-			// TODO Auto-generated method stub
 			return Gratif3Enum.LIDER;
 		}
 		
-	};
+	}, GERENTE {
+		@Override
+		protected Gratif3Enum getTipoGratif() {
+			return Gratif3Enum.GERENTE;
+		}
+	} ;
 	
 	// fim dos val magicos
 	protected abstract Gratif3Enum getTipoGratif();

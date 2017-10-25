@@ -15,16 +15,13 @@ public class Main {
 			e.printStackTrace();
 		}*/
 		
-		FuncEnum umFuncionario = FuncEnum.DESENVOLVEDOR.set(2100, NiveisGratif.NIVEL1);
+		FuncData umfuncionario = new FuncData(FuncEnum.LIDER, 1402.4, 2);
 		try {
-			System.out.println(umFuncionario.calcularGratif());
-			FuncEnum outroFuncionario = FuncEnum.DESENVOLVEDOR.set(2300, NiveisGratif.NIVEL2);
-			System.out.println(umFuncionario.calcularGratif() + " " + outroFuncionario.calcularGratif());;
+			System.out.println(umfuncionario.getGratif());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 		
 		/*FuncEnum outroFuncionario = new FuncEnum(FuncEnum.DBA,
 				1700, 2);
